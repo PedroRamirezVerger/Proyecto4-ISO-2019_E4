@@ -13,6 +13,7 @@ public class DatosRegistroSteps {
 
 	ChromeDriver driver = WebDriver.webDriver;
 
+	
 	@Given("^Estoy en la pagina de registro$")
 	public void estoy_en_la_pagina_de_registro() throws Throwable {
 		driver.get("http://localhost:8080/registro");
