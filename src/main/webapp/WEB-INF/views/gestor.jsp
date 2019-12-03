@@ -305,7 +305,10 @@
 									&& referrer != 'http://sgc-e4.herokuapp.com/formularioGestor'
 									&& referrer != 'sgc-e4.herokuapp.com/formularioGestor'
 									&& referrer != 'http://localhost:8080/calendarioGlobal'
-									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/calendarioGlobal'
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/gestor'
+									&& referrer != 'sgc-e4.herokuapp.com/gestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -462,6 +465,12 @@
 											+ j
 											+ '\' class=\'btn btn-primary \' onClick="funcionGestionarCitas(this)">'
 											+ 'Gestionar Citas' + '</button> '
+											+ '</td>'
+											+ '<td align="center" style="dislay: none;">'
+											+ '<button id=\'botonModificarHorarios'
+											+ j
+											+ '\' class=\'btn btn-primary \' onClick="funcionModificarHorarios(this)">'
+											+ 'Modificar Horario' + '</button> '
 											+ '</td></tr>');
 				}
 			}
@@ -480,6 +489,10 @@
 			};
 			sessionStorage.MedicoEdit = JSON.stringify(jsoMedico);
 			location.href = "/medicoGestor";
+		}
+		
+		function funcionGestionarCitas(boton) {
+			location.href = "/gestor";
 		}
 
 		function funcionCalendario(boton) {
