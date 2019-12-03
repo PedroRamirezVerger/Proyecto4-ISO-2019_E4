@@ -220,27 +220,27 @@
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/citas'
-									&& referrer != 'https://the-good-health.herokuapp.com/citas'
-									&& referrer != 'http://the-good-health.herokuapp.com/citas'
-									&& referrer != 'the-good-health.herokuapp.com/citas'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citas'
+									&& referrer != 'http://sgc-e4.herokuapp.com/citas'
+									&& referrer != 'sgc-e4.herokuapp.com/citas'
 									&& referrer != 'http://localhost:8080/citasGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/citasGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/citasGestor'
-									&& referrer != 'the-good-health.herokuapp.com/citasGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citasGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/citasGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/citasGestor'
 									&& referrer != 'http://localhost:8080/medicoGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/medicoGestor'
-									&& referrer != 'http://the-good-health.herokuapp.com/medicoGestor'
-									&& referrer != 'the-good-health.herokuapp.com/medicoGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/medicoGestor'
+									&& referrer != 'http://sgc-e4.herokuapp.com/medicoGestor'
+									&& referrer != 'sgc-e4.herokuapp.com/medicoGestor'
 									&& referrer != 'http://localhost:8080/citasGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/citasGestor'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citasGestor'
 									&& referrer != 'http://localhost:8080/medicoGestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/medicoGestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/medicoGestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
 							}
 							if (referrer == 'http://localhost:8080/medicoGestor'
-									|| referrer != 'https://the-good-health.herokuapp.com/medicoGestor') {
+									|| referrer != 'https://sgc-e4.herokuapp.com/medicoGestor') {
 								document.getElementById("tituloespecialidad").innerHTML = "";
 							}
 							var jsoModif = JSON.parse(sessionStorage.modificar);
@@ -344,10 +344,10 @@
 												event.preventDefault();
 												var referrer = document.referrer;
 												if (referrer == 'http://localhost:8080/citasGestor'
-														|| referrer == 'https://the-good-health.herokuapp.com/citasGestor') {
+														|| referrer == 'https://sgc-e4.herokuapp.com/citasGestor') {
 													location.href = "/citasGestor";
 												} else if (referrer == 'http://localhost:8080/medicoGestor'
-														|| referrer == 'https://the-good-health.herokuapp.com/medicoGestor') {
+														|| referrer == 'https://sgc-e4.herokuapp.com/medicoGestor') {
 													location.href = "/medicoGestor";
 												} else
 													location.href = "/citas";
@@ -551,11 +551,11 @@
 			var dniPac;
 			var referrer = document.referrer;
 			if (referrer == "http://localhost:8080/citasGestor"
-					|| referrer == "https://the-good-health.herokuapp.com/citasGestor") {
+					|| referrer == "https://sgc-e4.herokuapp.com/citasGestor") {
 				var jsoEdit = JSON.parse(sessionStorage.PacienteEdit);
 				dniPac = jsoEdit.Paciente[0].DNI;
 			} else if (referrer == "http://localhost:8080/medicoGestor"
-					|| referrer == "https://the-good-health.herokuapp.com/medicoGestor")
+					|| referrer == "https://sgc-e4.herokuapp.com/medicoGestor")
 				dniPac = jsoModif.citaModificar[0].dniPaciente;
 			else
 				dniPac = jsoUser.resultado.usuario.dni;
@@ -602,10 +602,10 @@
 							function() {
 								var referrer = document.referrer;
 								if (referrer == "http://localhost:8080/citasGestor"
-										|| referrer == "https://the-good-health.herokuapp.com/citasGestor")
+										|| referrer == "https://sgc-e4.herokuapp.com/citasGestor")
 									window.location.href = "/citasGestor";
 								else if (referrer == "http://localhost:8080/medicoGestor"
-										|| referrer == "https://the-good-health.herokuapp.com/medicoGestor")
+										|| referrer == "https://sgc-e4.herokuapp.com/medicoGestor")
 									window.location.href = "/medicoGestor";
 								else
 									window.location.href = "/citas";

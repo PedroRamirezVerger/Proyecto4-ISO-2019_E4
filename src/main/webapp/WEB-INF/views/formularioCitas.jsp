@@ -221,9 +221,9 @@
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/citas'
-									&& referrer != 'https://the-good-health.herokuapp.com/citas'
-										&& referrer != 'http://the-good-health.herokuapp.com/citas'
-											&& referrer != 'the-good-health.herokuapp.com/citas') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/citas'
+										&& referrer != 'http://sgc-e4.herokuapp.com/citas'
+											&& referrer != 'sgc-e4.herokuapp.com/citas') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();

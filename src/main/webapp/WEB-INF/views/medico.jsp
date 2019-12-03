@@ -202,13 +202,13 @@
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/'
-									&& referrer != 'https://the-good-health.herokuapp.com/'
+									&& referrer != 'https://sgc-e4.herokuapp.com/'
 									&& referrer != 'http://localhost:8080/registro'
-									&& referrer != 'https://the-good-health.herokuapp.com/registro'
+									&& referrer != 'https://sgc-e4.herokuapp.com/registro'
 									&& referrer != 'http://localhost:8080/citas'
-									&& referrer != 'https://the-good-health.herokuapp.com/citas'
+									&& referrer != 'https://sgc-e4.herokuapp.com/citas'
 									&& referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
@@ -226,7 +226,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#modificarMedico').hide();
 							}
 						});
@@ -237,7 +237,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#eliminarMedico').hide();
 							}
 						});
@@ -365,7 +365,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#columnaModificar').hide();
 							}
 						});
@@ -376,7 +376,7 @@
 
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor') {
 								$('#columnaEliminar').hide();
 							}
 						});

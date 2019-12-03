@@ -390,9 +390,9 @@
 							 */
 							var referrer = document.referrer;
 							if (referrer != 'http://localhost:8080/gestor'
-									&& referrer != 'https://the-good-health.herokuapp.com/gestor'
-										&& referrer != 'http://the-good-health.herokuapp.com/gestor'
-											&& referrer != 'the-good-health.herokuapp.com/gestor') {
+									&& referrer != 'https://sgc-e4.herokuapp.com/gestor'
+										&& referrer != 'http://sgc-e4.herokuapp.com/gestor'
+											&& referrer != 'sgc-e4.herokuapp.com/gestor') {
 								var forma = document.forms[0];
 								forma.action = "/error";
 								forma.submit();
