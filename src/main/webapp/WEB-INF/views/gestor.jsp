@@ -428,7 +428,7 @@
 											+ '<button id=\'botonModificarCentro'
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionModificarCentro(this)">'
-											+ 'Asignar Centro'
+											+ 'Cambiar Centro'
 											+ '</button> '
 											+ '</td></tr>');
 				}
