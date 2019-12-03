@@ -203,8 +203,8 @@
 
 			// 							$('DNIMedico').html(dni);
 			/*
-			 * Control para que no acceda a travï¿½s de la url a alguna pï¿½gina que no sea el home
-			 * Hay que ponerlo en todos los jsp que se hagan prï¿½ximamente
+			 * Control para que no acceda a través de la url a alguna página que no sea el home
+			 * Hay que ponerlo en todos los jsp que se hagan próximamente
 			 */
 			// 							var referrer = document.referrer;
 			// 							if (referrer != 'http://localhost:8080/citas'
