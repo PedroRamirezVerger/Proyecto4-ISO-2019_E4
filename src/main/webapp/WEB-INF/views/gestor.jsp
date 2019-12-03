@@ -385,14 +385,8 @@
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
-											+ '</button> ' + '</td>'
-											+ '<td align="center" style="dislay: none;">'
-											+ '<button id=\'botonModificarCentro'
-											+ i
-											+ '\' class=\'btn btn-primary \' onClick="funcionModificarCentro(this)">'
-											+ 'Asignar Centro'
-											+ '</button> '
-											+ '</td></tr>');
+											+ '</button> ' + '</td></tr>');
+
 				}
 
 				if (jsoUsuarios.Pacientes[i].centroMedico == centroMedicoGestor) {
@@ -428,7 +422,14 @@
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
-											+ '</button> ' + '</td></tr>');
+											+ '</button> ' + '</td>
+											+ '<td align="center" style="dislay: none;">'
+											+ '<button id=\'botonModificarCentro'
+											+ i
+											+ '\' class=\'btn btn-primary \' onClick="funcionModificarCentro(this)">'
+											+ 'Asignar Centro'
+											+ '</button> '
+											+ '</td></tr>');
 				}
 			}
 
