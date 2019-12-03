@@ -422,7 +422,8 @@
 											+ i
 											+ '\' class=\'btn btn-primary \' onClick="funcionConvertirGestor(this)">'
 											+ 'Convertir en Gestor'
-											+ '</button> ' + '</td>
+											+ '</button> ' 
+											+ '</td>'
 											+ '<td align="center" style="dislay: none;">'
 											+ '<button id=\'botonModificarCentro'
 											+ i
