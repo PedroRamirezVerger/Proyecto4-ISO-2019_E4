@@ -26,6 +26,7 @@ import cucumber.api.java.en.When;
 public class VisualizacionCalendarioUsuariosSteps {
 
 	ChromeDriver driver = WebDriver.webDriver;
+	
 	JSONObject usuarios;
 
 	@Given("^Se registra un gestor$")
