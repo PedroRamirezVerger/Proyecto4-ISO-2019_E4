@@ -15,7 +15,7 @@ public class DatosRegistroSteps {
 
 	@Given("^Estoy en la pagina de registro$")
 	public void estoy_en_la_pagina_de_registro() throws Throwable {
-		driver.get("https://sgc-e4.herokuapp.com/registro");
+		driver.get("http://localhost:8080/registro");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		assertEquals("Registro", driver.getTitle());
 	}
