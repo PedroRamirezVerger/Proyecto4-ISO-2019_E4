@@ -52,7 +52,7 @@ public class DatosRegistroSteps {
 		elementPwd = driver.findElement(By.id("contraseña"));
 		elementPwdRepe = driver.findElement(By.id("RepetirContraseña"));
 
-		elementDNI.sendKeys("12345678Z");
+		elementDNI.sendKeys("00000000Z");
 		elementNombre.sendKeys("Prueba");
 		elementApellidos.sendKeys("Prueba");
 		elementFecha.sendKeys("26/10/1998");
@@ -87,7 +87,7 @@ public class DatosRegistroSteps {
 		elementPwd = driver.findElement(By.id("contraseña"));
 		elementPwdRepe = driver.findElement(By.id("RepetirContraseña"));
 
-		elementDNI.sendKeys("12345678Z");
+		elementDNI.sendKeys("00000000Z");
 		elementNombre.sendKeys("Prueba");
 		elementApellidos.sendKeys("Prueba");
 		elementFecha.sendKeys("26/10/1998");
