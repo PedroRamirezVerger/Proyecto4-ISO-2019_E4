@@ -29,7 +29,7 @@ public class LoginSteps {
 
 	@Given("^Estamos en la pagina principal$")
 	public void estamos_en_la_pagina_principal() throws Throwable {
-		driver.get("http://localhost:8080");
+		driver.get("https://sgc-e4.herokuapp.com/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		assertEquals("The Good Health", driver.getTitle());
 	}
